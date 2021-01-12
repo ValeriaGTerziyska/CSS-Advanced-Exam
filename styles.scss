@@ -1,0 +1,38 @@
+@import "./styles/01-settings/settings-animations";
+@import "./styles/01-settings/_settings-borders";
+@import "./styles/01-settings/_settings-colors";
+@import "./styles/01-settings/_settings-shadows";
+@import "./styles/01-settings/settings-mixins";
+@import "./styles/01-settings/settings-breakpoints";
+
+@import "./styles/03-generic/_generic-normalize";
+
+@import "./styles/04-elements/_elements-images";
+@import "./styles/04-elements/_elements-typography";
+
+@import "./styles/05-objects/_objects-wrappers";
+@import "./styles/05-objects/_objects-nav";
+
+@import "./styles/06-components/_components-header";
+@import "./styles/06-components/_components-buttons";
+@import "./styles/06-components/_components-navigation";
+@import "./styles/06-components/_components-course-main";
+@import "./styles/06-components/_components-footer";
+
+@import "./styles/06-components/_components-trainers-main";
+
+@import "./styles/06-components/_components-contact-us-main";
+
+@import "./styles/07-utilities/_utilites-btn";
+@import "./styles/07-utilities/_utilities-padding";
+@import "./styles/07-utilities/_utilities-font-weight";
+@import "./styles/07-utilities/_utilities-arrow-down";
+@import "./styles/07-utilities/_utilities-underline";
+@import "./styles/07-utilities/_utilities-font-family";
+@import "./styles/07-utilities/_utilities-hover-primary";
+@import "./styles/07-utilities/_utilities-heading";
+@import "./styles/07-utilities/_utilities-colors";
+@import "./styles/07-utilities/_utilities-circle-img";
+@import "./styles/07-utilities/_utilities-margin";
+@import "./styles/07-utilities/_utilities-font-size";
+@import "./styles/07-utilities/_utilities-animations";
