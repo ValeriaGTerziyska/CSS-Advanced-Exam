@@ -1,0 +1,12 @@
+.u-zero-margin {
+    margin: 0 !important;
+
+    &--bottom {
+        margin-bottom: 0 !important;
+    }
+
+    &--top {
+        margin-top: 0 !important;
+    }
+}
+

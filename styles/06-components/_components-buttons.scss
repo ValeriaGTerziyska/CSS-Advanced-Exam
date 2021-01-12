@@ -1,0 +1,56 @@
+.btn {
+  color: #fff;
+  box-shadow: $box-shadow-btn;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--secondary {
+    border-radius: $radius-btn;
+    background-color: $secondary-800;
+    padding: 10px 22px;
+  }
+
+  &--first-steps {
+    border-radius: $radius-secondary;
+    background-color: $secondary-500;
+    padding: 4px 8px;
+    box-shadow: $box-shadow-secondary;
+  }
+
+  &--primary {
+    border-radius: $radius-btn;
+    background-color: $secondary-800;
+    padding: 14px 32px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 800;
+  }
+
+  &:hover {
+      cursor: pointer;
+  }
+}
+
+.btn-empty {
+  background-color: #fff;
+  border-radius: $radius-btn;
+  color: $secondary-800;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: 1px solid $secondary-800;
+}
+
+.text-like {
+  padding: 0;
+  border: 0;
+  background: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

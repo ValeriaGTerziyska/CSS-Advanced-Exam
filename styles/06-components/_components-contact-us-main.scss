@@ -1,0 +1,119 @@
+.c-contact-us-main {
+  display: grid;
+  grid-template-rows: 400px 690px 600px;
+
+  &__map {
+    background-image: url("../../assets/images/Map.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &-card {
+      color: $grey-700;
+      padding: 32px;
+      display: grid;
+      grid-template-rows: min-content min-content 80px;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+      background-color: #fff;
+      border-radius: $radius-boxes;
+      box-shadow: $box-shadow-secondary;
+      width: 520px;
+      height: 400px;
+      position: absolute;
+      top: 160px;
+      left: 100px;
+
+      &-address {
+        grid-column: 1 / 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+
+        &-workingTime {
+          display: grid;
+          grid-template-rows: min-content min-content min-content;
+          grid-template-columns: 1fr 1fr;
+
+          &-heading {
+            grid-column: 1 / 3;
+          }
+        }
+      }
+
+      &-contacts {
+        grid-column: 1/2;
+      }
+
+      &-button {
+        grid-column: 1 / 3;
+        justify-self: center;
+        align-self: center;
+      }
+    }
+
+  }
+
+  &__form {
+    background-color: #fff;
+    text-align: center;
+
+    .o-page-content-wrapper {
+      max-width: 800px;
+      padding: 180px 0 96px;
+      display: grid;
+      grid-template-rows: 24px 1fr max-content;
+      row-gap: 32px;
+      justify-content: center;
+    }
+
+    &-fields {
+      display: grid;
+      grid-template-rows: 50px 200px;
+      grid-template-columns: 400px 400px;
+      row-gap: 30px;
+      column-gap: 30px;
+
+      &-item {
+        display: grid;
+        border-radius: $radius-input;
+        background: transparent;
+        border: 1px solid $grey-500;
+        padding: 16px;
+        width: 400px;
+
+        &-last {
+          grid-column: 1 /3;
+          width: 830px;
+          height: 100%;
+        }
+      }
+    }
+
+    &-fields::placeholder {
+      color: $grey-500;
+    }
+
+    &-button {
+      justify-self: flex-start;
+    }
+  }
+
+  &__directions {
+    background-color: $secondary-50;
+    color: $grey-700;
+    padding-top: 60px;
+
+    .o-page-content-wrapper {
+      display: grid;
+      grid-template-rows: max-content 1fr;
+      justify-items: center;
+    }
+
+    &-transport {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+    }
+  }
+}

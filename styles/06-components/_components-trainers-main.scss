@@ -1,0 +1,138 @@
+.c-trainers-main {
+  display: grid;
+  grid-template-rows: 280px 550px 1470px 1fr;
+  background-color: goldenrod;
+
+  &__teachers {
+    background-color: $secondary-600;
+    color: #fff;
+    text-align: center;
+
+    .o-page-content-wrapper {
+      padding: 40px 220px;
+    }
+  }
+
+  &__directors {
+    background-color: #fff;
+    color: $grey-700;
+    padding: 90px 0;
+    position: relative;
+
+    .o-page-content-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+    }
+
+    &-manager {
+      display: grid;
+      grid-template-columns: 170px 410px;
+      column-gap: 20px;
+    }
+  }
+
+  &__directors::after {
+    content: "";
+    background-image: url("../../assets/images/blue-dots.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: 98%;
+    height: 10px;
+  }
+
+  &__members {
+    background-color: #fff;
+    padding: 64px 0 100px;
+
+    .o-page-content-wrapper {
+      display: grid;
+      max-width: 1100px;
+      grid-template-rows: 1r 1fr 1fr 1fr;
+      row-gap: 64px;
+    }
+
+    &-row {
+      display: grid;
+      grid-template-columns: max-content max-content max-content max-content;
+      column-gap: 80px;
+      justify-content: space-around;
+    }
+
+    &-box {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      &-hover-info {
+        display: none;
+        position: absolute;
+        background-image: url("../../assets/images/orange-circle2.svg");
+        background-position: center;
+        background-size: 160px;
+        background-repeat: no-repeat;
+        text-align: center;
+        color: #fff;
+        width: 160px;
+        height: 160px;
+        top: 5px;
+        left: 15px;
+        padding-top: 30px;
+      }
+
+      &-hover-info:hover {
+        cursor: pointer;
+        display: block;
+      }
+    }
+  }
+
+  &__apply {
+    background-color: $blue-300;
+    color: #fff;
+    padding: 30px 120px 150px;
+    position: relative;
+
+    .o-page-content-wrapper {
+      display: grid;
+      grid-template-rows: max-content max-content 1fr;
+      row-gap: 30px;
+      text-align: center;
+    }
+
+    &-form {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+      &-field {
+        border-radius: $radius-input;
+        background: transparent;
+        border: 1px solid #fff;
+        width: 230px;
+        padding: 16px;
+        margin-right: 20px;
+      }
+
+      &-field::placeholder {
+        color: #fff;
+      }
+    }
+  }
+
+  &__apply::before {
+    content: "";
+    background-color: $blue-200;
+    position: absolute;
+    height: 12px;
+    width: 100%;
+    top: -12px;
+    left: 0;
+  }
+}
