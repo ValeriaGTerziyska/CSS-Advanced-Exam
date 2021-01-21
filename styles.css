@@ -573,7 +573,7 @@ h5,
 }
 
 .c-course-main__first-steps-registration {
-  position: absolute;
+  position: relative;
   width: 1220px;
   height: 110px;
   background-color: #fff;
