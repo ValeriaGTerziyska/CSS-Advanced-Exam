@@ -339,6 +339,7 @@ h5,
 
 .o-page-wrapper {
   min-height: 100%;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 75px 1fr 310px;
